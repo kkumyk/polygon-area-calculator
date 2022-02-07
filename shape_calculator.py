@@ -37,5 +37,15 @@ class Rectangle:
     def __str__(self):
         return "Rectangle(width=" + str(self.width) + ", height=" + str(self.height) + ")"
 
+
 class Square(Rectangle):
-    pass
+    def __init__(self, side_length):
+        self.width = side_length
+        self.height = side_length
+
+    def set_side(self, side_length):
+        self.width = side_length
+        self.height = side_length
+
+    def __str__(self):
+        return "Square(side=" + str(self.width) + ")"
